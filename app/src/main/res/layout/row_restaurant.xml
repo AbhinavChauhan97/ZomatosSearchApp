@@ -13,14 +13,17 @@
 
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
-    android:layout_height="60dp"
-    android:background="@android:color/darker_gray">
+    android:layout_height="65dp"
+    android:background="@color/restaurant_row_background">
 
     <ImageView
         android:id="@+id/restaurants_featured_image"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_margin="3dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="5dp"
         imageUrl="@{restaurant.thumb}"
         app:layout_constraintWidth_percent="0.2"
         app:layout_constraintStart_toStartOf="parent"

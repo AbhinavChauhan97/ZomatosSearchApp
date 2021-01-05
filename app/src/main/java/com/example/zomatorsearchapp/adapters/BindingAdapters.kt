@@ -9,8 +9,8 @@ object BindingAdapters {
 
     @JvmStatic
     @BindingAdapter("imageUrl")
-    fun setSrc(imageView: ImageView,imageUrl:String){
-        if(imageUrl.isEmpty()){
+    fun setSrc(imageView: ImageView,imageUrl:String?){
+        if(imageUrl == null || imageUrl.isEmpty() || imageUrl.isBlank()){
             imageView.load(R.drawable.restaurant)
         }
         else{
