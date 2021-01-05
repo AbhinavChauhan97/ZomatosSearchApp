@@ -74,9 +74,4 @@ class RestaurantsListFragment : Fragment(R.layout.fragment_searched_restaurants)
 
         })
     }
-
-    override fun onResume() {
-        super.onResume()
-    }
-
 }
